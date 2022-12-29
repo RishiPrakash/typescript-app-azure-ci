@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: rishiprakashtypescriptappazureci 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rishiprakashtypescriptappazureci
+  template:
+    metadata:
+      labels:
+        app: rishiprakashtypescriptappazureci 
+    spec:
+      containers:
+        - name: rishiprakashtypescriptappazureci 
+          image: rishi90containerregistery.azurecr.io/rishiprakashtypescriptappazureci
+          ports:
+          - containerPort: 8080
