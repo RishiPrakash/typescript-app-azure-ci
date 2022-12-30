@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: rishiprakashtypescriptappazureci 
-          image: rishi90containerregistery.azurecr.io/rishiprakashtypescriptappazureci
+          image: rishi90containerregistery.azurecr.io/ts-app-az-ci:cf5
           ports:
           - containerPort: 8080
